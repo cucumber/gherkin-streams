@@ -15,7 +15,10 @@
   "license": "MIT",
   "scripts": {
     "test": "mocha",
-    "prepublishOnly": "tsc --build tsconfig.build.json"
+    "build": "tsc --build tsconfig.build.json",
+    "prepublishOnly": "npm run build",
+    "eslint:fix": "eslint --ext ts,tsx --max-warnings 0 --fix src test",
+    "eslint": "eslint --ext ts,tsx --max-warnings 0 src test"
   },
   "dependencies": {
     "@cucumber/gherkin": "^22.0.0",
@@ -27,8 +30,16 @@
   "devDependencies": {
     "@types/mocha": "9.1.0",
     "@types/node": "16.11.26",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "mocha": "9.2.1",
     "nyc": "15.1.0",
+    "prettier": "^2.5.1",
     "ts-node": "^10.5.0",
     "tsconfig-paths": "^3.12.0",
     "typescript": "4.6.2"
