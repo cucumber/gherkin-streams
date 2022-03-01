@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/cucumber/cucumber.git"
+    "url": "git://github.com/cucumber/gherkin-streams.git"
   },
   "author": "Cucumber Limited <cukes@googlegroups.com>",
   "license": "MIT",
@@ -32,9 +32,9 @@
     "typescript": "4.6.2"
   },
   "bugs": {
-    "url": "https://github.com/cucumber/cucumber/issues"
+    "url": "https://github.com/cucumber/gherkin-streams/issues"
   },
-  "homepage": "https://github.com/cucumber/cucumber#readme",
+  "homepage": "https://github.com/cucumber/gherkin-streams#readme",
   "directories": {
     "test": "test"
   },
