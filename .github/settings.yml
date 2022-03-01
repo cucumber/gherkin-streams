@@ -1,0 +1,5 @@
+_extends: .github
+
+repository:
+  name: gherkin-streams
+  description: Streams for reading Gherkin parser output
