@@ -58,12 +58,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 * First release
 
 <!-- Releases -->
-[Unreleased]: https://github.com/cucumber/cucumber/compare/gherkin-streams/v4.0.0...main
-[4.0.0]:      https://github.com/cucumber/cucumber/releases/tag/gherkin-streams/v3.0.0
-[3.0.0]:      https://github.com/cucumber/cucumber/releases/tag/gherkin-streams/v2.0.2
-[2.0.2]:      https://github.com/cucumber/cucumber/releases/tag/gherkin-streams/v2.0.1
-[2.0.1]:      https://github.com/cucumber/cucumber/releases/tag/gherkin-streams/v2.0.0
-[2.0.0]:      https://github.com/cucumber/cucumber/releases/tag/gherkin-streams/v1.0.0
-[1.0.0]:      https://github.com/cucumber/cucumber/releases/tag/gherkin-streams/v1.0.0
+[Unreleased]: https://github.com/cucumber/gherkin-streams/compare/v4.0.0...main
+[4.0.0]:      https://github.com/cucumber/gherkin-streams/releases/tag/v3.0.0
+[3.0.0]:      https://github.com/cucumber/gherkin-streams/releases/tag/v2.0.2
+[2.0.2]:      https://github.com/cucumber/gherkin-streams/releases/tag/v2.0.1
+[2.0.1]:      https://github.com/cucumber/gherkin-streams/releases/tag/v2.0.0
+[2.0.0]:      https://github.com/cucumber/gherkin-streams/releases/tag/v1.0.0
+[1.0.0]:      https://github.com/cucumber/gherkin-streams/releases/tag/v1.0.0
 
 <!-- Contributors in alphabetical order -->
