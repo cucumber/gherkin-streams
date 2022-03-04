@@ -37,6 +37,8 @@ jobs:
           cache: "npm"
           cache-dependency-path: package-lock.json
 
+      - run: npm --version
+
       - run: npm install-ci-test
 
       - run: npm run build
