@@ -21,9 +21,6 @@
     "eslint": "eslint --ext ts,tsx --max-warnings 0 src test"
   },
   "dependencies": {
-    "@cucumber/gherkin": "^22.0.0",
-    "@cucumber/message-streams": "^3.0.0",
-    "@cucumber/messages": "^17.1.1",
     "commander": "9.0.0",
     "source-map-support": "0.5.21"
   },
@@ -44,6 +41,10 @@
     "ts-node": "^10.5.0",
     "tsconfig-paths": "^3.12.0",
     "typescript": "4.6.2"
+  },
+  "peerDependencies": {
+    "@cucumber/gherkin": "^22.0.0",
+    "@cucumber/messages": "^17.1.1"
   },
   "bugs": {
     "url": "https://github.com/cucumber/gherkin-streams/issues"
