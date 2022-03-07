@@ -12,8 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 
 * `@cucumber/gherkin`, `@cucumber/messages` and `@cucumber/message-streams` are now
-  peer dependencies. You will have to explicitely depend on those in your projects
-  in addition to `@cucumber/gherkin-streams`.
+  peer dependencies. You have to add `@cucumber/gherkin` in your dependencies.
   ([PR#5](https://github.com/cucumber/gherkin-streams/pull/5))
 
 ### Deprecated
