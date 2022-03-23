@@ -2,6 +2,16 @@
 
 This module contains utilities to use the Gherkin library with streams.
 
+## Installation
+
+`gherkin-streams` has 3 peer dependencies: `@cucumber/gherkin`, `@cucumber/messages`
+and `@cucumber/message-streams`.
+
+You need to have `@cucumber/gherkin` and`@cucumber/message-streams` in your dependencies,
+`@cucumber/messages` is actually installed automatically with `@cucumber/gherkin`.
+
+    npm install @cucumber/gherkin-streams @cucumber/gherkin @cucumber/message-streams
+
 ## Usage
 
 ```javascript
