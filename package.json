@@ -46,9 +46,9 @@
     "typescript": "4.6.3"
   },
   "peerDependencies": {
-    "@cucumber/gherkin": "^22.0.0",
-    "@cucumber/messages": "^17.1.1",
-    "@cucumber/message-streams": "^4.0.0"
+    "@cucumber/gherkin": ">=22.0.0",
+    "@cucumber/messages": ">=17.1.1",
+    "@cucumber/message-streams": ">=4.0.0"
   },
   "bugs": {
     "url": "https://github.com/cucumber/gherkin-streams/issues"

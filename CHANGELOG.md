@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+- Peer dependencies are now more permissives and simply request any version higher than:
+  - @cucumber/gherkin: >=22.0.0
+  - @cucumber/messages: >=17.1.1
+  - @cucumber/message-streams: >=4.0.0
+
 ## [5.0.0] - 2022-03-07
 
 ### Changed
