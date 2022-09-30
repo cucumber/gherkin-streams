@@ -21,7 +21,7 @@
     "eslint": "eslint --ext ts,tsx --max-warnings 0 src test"
   },
   "dependencies": {
-    "commander": "9.4.0",
+    "commander": "9.4.1",
     "source-map-support": "0.5.21"
   },
   "devDependencies": {
