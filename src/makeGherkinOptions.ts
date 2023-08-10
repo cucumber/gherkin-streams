@@ -9,6 +9,8 @@ const defaultOptions: IGherkinOptions = {
   newId: IdGenerator.uuid(),
 }
 
-export default function gherkinOptions(options: IGherkinOptions) {
+export default function gherkinOptions(
+  options: IGherkinOptions
+): IGherkinOptions {
   return { ...defaultOptions, ...options }
 }
