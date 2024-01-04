@@ -59,7 +59,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [1.0.0] - 2021-03-24
 
-[Unreleased]: https://github.com/cucumber/gherkin-streams/compare/v5.0.1...main
+[Unreleased]: https://github.com/cucumber/gherkin-streams/compare/v5.0.1...HEAD
 [5.0.1]: https://github.com/cucumber/gherkin-streams/compare/v5.0.0...v5.0.1
 [5.0.0]: https://github.com/cucumber/gherkin-streams/compare/v4.0.0...v5.0.0
 [4.0.0]: https://github.com/cucumber/gherkin-streams/releases/tag/v3.0.0
