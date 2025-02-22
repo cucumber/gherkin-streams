@@ -18,7 +18,7 @@
     "build": "tsc --build tsconfig.build.json",
     "prepublishOnly": "npm run build",
     "fix": "eslint --max-warnings 0 --fix src test && prettier --write src test",
-    "lint": "eslint --max-warnings 0 src test && prettier --check src"
+    "lint": "eslint --max-warnings 0 src test && prettier --check src test"
   },
   "dependencies": {
     "commander": "13.1.0",
