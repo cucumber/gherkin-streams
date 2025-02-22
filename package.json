@@ -17,8 +17,8 @@
     "test": "mocha",
     "build": "tsc --build tsconfig.build.json",
     "prepublishOnly": "npm run build",
-    "eslint:fix": "eslint --ext ts,tsx --max-warnings 0 --fix src test",
-    "eslint": "eslint --ext ts,tsx --max-warnings 0 src test"
+    "fix": "eslint --max-warnings 0 --fix src test && prettier --write src test",
+    "lint": "eslint --max-warnings 0 src test && prettier --check src"
   },
   "dependencies": {
     "commander": "13.1.0",
@@ -26,28 +26,30 @@
   },
   "devDependencies": {
     "@cucumber/gherkin": "^32.0.0",
-    "@cucumber/messages": "^27.0.0",
     "@cucumber/message-streams": "^4.0.1",
+    "@cucumber/messages": "^27.0.0",
+    "@eslint/compat": "^1.2.7",
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.21.0",
     "@types/mocha": "10.0.10",
     "@types/node": "22.13.5",
-    "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "@typescript-eslint/parser": "^8.0.0",
-    "eslint": "^8.12.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-n": "^17.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-simple-import-sort": "^12.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.24.1",
+    "@typescript-eslint/parser": "^8.24.1",
+    "eslint": "^9.21.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^17.15.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^16.0.0",
     "mocha": "11.1.0",
     "nyc": "17.1.0",
-    "prettier": "^3.0.0",
+    "prettier": "^3.5.2",
     "ts-node": "^10.7.0",
     "typescript": "5.7.3"
   },
   "peerDependencies": {
     "@cucumber/gherkin": ">=22.0.0",
-    "@cucumber/messages": ">=17.1.1",
-    "@cucumber/message-streams": ">=4.0.0"
+    "@cucumber/message-streams": ">=4.0.0",
+    "@cucumber/messages": ">=17.1.1"
   },
   "bugs": {
     "url": "https://github.com/cucumber/gherkin-streams/issues"
