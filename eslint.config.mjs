@@ -58,6 +58,8 @@ export default [...fixupConfigRules(compat.extends(
         "simple-import-sort/exports": "error",
     },
 }, {
+    files: ["test/**"],
+
     rules: {
         "@typescript-eslint/no-non-null-assertion": "off",
     },
