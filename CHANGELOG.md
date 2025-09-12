@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [6.0.0] - 2025-09-12
 ### Added
 - Add support for Node.js 24.x ([#111](https://github.com/cucumber/gherkin-streams/pull/111))
 
@@ -13,29 +15,25 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Drop support for Node.js 18.x, 22.x ([#111](https://github.com/cucumber/gherkin-streams/pull/111))
 
 ## [5.0.1] - 2022-03-31
-
 ### Changed
-
 - Peer dependencies are now more permissive and simply request any version greater than:
   - @cucumber/gherkin: >=22.0.0
   - @cucumber/messages: >=17.1.1
   - @cucumber/message-streams: >=4.0.0
 
 ## [5.0.0] - 2022-03-07
-
 ### Changed
-
 - `@cucumber/gherkin`, `@cucumber/messages` and `@cucumber/message-streams` are now
-  peer dependencies. You now have to add `@cucumber/gherkin` in your dependencies:
-  ```diff
-  {
-    "dependencies": {
-  +   "@cucumber/gherkin": "22.0.0",
-      "@cucumber/gherkin-streams": "5.0.0",
-    }
-  }
-  ```
-  ([PR#5](https://github.com/cucumber/gherkin-streams/pull/5))
+peer dependencies. You now have to add `@cucumber/gherkin` in your dependencies:
+```diff
+{
+"dependencies": {
+  - "@cucumber/gherkin": "22.0.0",
+"@cucumber/gherkin-streams": "5.0.0",
+}
+}
+```
+([PR#5](https://github.com/cucumber/gherkin-streams/pull/5))
 
 ## [4.0.0] - 2021-09-01
 ### Changed
@@ -64,7 +62,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [1.0.0] - 2021-03-24
 
-[Unreleased]: https://github.com/cucumber/gherkin-streams/compare/v5.0.1...HEAD
+[Unreleased]: https://github.com/cucumber/gherkin-streams/compare/v6.0.0...HEAD
+[6.0.0]: https://github.com/cucumber/gherkin-streams/compare/v5.0.1...v6.0.0
 [5.0.1]: https://github.com/cucumber/gherkin-streams/compare/v5.0.0...v5.0.1
 [5.0.0]: https://github.com/cucumber/gherkin-streams/compare/v4.0.0...v5.0.0
 [4.0.0]: https://github.com/cucumber/gherkin-streams/releases/tag/v3.0.0
@@ -73,5 +72,3 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [2.0.1]: https://github.com/cucumber/gherkin-streams/releases/tag/v2.0.0
 [2.0.0]: https://github.com/cucumber/gherkin-streams/releases/tag/v1.0.0
 [1.0.0]: https://github.com/cucumber/gherkin-streams/releases/tag/v1.0.0
-
-<!-- Contributors in alphabetical order -->
