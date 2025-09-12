@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- Add support for Node.js 24.x ([#111](https://github.com/cucumber/gherkin-streams/pull/111))
+
+### Removed
+- Drop support for Node.js 18.x, 22.x ([#111](https://github.com/cucumber/gherkin-streams/pull/111))
 
 ## [5.0.1] - 2022-03-31
 
