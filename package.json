@@ -25,7 +25,7 @@
     "source-map-support": "0.5.21"
   },
   "devDependencies": {
-    "@cucumber/gherkin": "^34.0.0",
+    "@cucumber/gherkin": "^35.0.0",
     "@cucumber/message-streams": "^4.0.1",
     "@cucumber/messages": "^29.0.0",
     "@eslint/compat": "^1.2.7",
