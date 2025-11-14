@@ -28,7 +28,7 @@
     "@cucumber/gherkin": "^36.0.0",
     "@cucumber/message-streams": "^4.0.1",
     "@cucumber/messages": "^30.0.0",
-    "@eslint/compat": "^1.2.7",
+    "@eslint/compat": "^2.0.0",
     "@eslint/eslintrc": "^3.3.0",
     "@eslint/js": "^9.21.0",
     "@types/mocha": "10.0.10",
