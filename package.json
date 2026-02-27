@@ -39,7 +39,7 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "globals": "^17.0.0",
     "mocha": "11.7.5",
-    "nyc": "17.1.0",
+    "nyc": "18.0.0",
     "prettier": "^3.5.2",
     "ts-node": "^10.7.0",
     "typescript": "5.9.3"
