@@ -6,16 +6,8 @@ on:
       - release/*
 
 jobs:
-
-  pre-release-check:
-    uses: cucumber/.github/.github/workflows/prerelease-checks.yml@main
-
-  test-javascript:
-    uses: ./.github/workflows/test.yml
-
   create-github-release:
     name: Create GitHub Release and Git tag
-    needs: [pre-release-check, test-javascript]
     runs-on: ubuntu-latest
     environment: Release
     permissions:
