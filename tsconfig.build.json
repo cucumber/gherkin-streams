@@ -11,9 +11,5 @@
     "module": "commonjs"
   },
   "files": [],
-  "include": [
-    "package.json",
-    "src",
-    "test"
-  ]
+  "include": ["package.json", "src", "test"]
 }

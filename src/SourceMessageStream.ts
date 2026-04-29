@@ -1,6 +1,6 @@
+import { relative } from 'node:path'
+import { Transform, type TransformCallback } from 'node:stream'
 import { makeSourceEnvelope } from '@cucumber/gherkin'
-import { relative } from 'path'
-import { Transform, TransformCallback } from 'stream'
 
 /**
  * Stream that reads a string and writes a single Source message.
@@ -15,11 +15,7 @@ export default class SourceMessageStream extends Transform {
     super({ readableObjectMode: true, writableObjectMode: false })
   }
 
-  public _transform(
-    chunk: Buffer,
-    encoding: string,
-    callback: TransformCallback
-  ) {
+  public _transform(chunk: Buffer, _encoding: string, callback: TransformCallback) {
     this.buffer = Buffer.concat([this.buffer, chunk])
     callback()
   }

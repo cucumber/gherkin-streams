@@ -1,4 +1,4 @@
-import { IGherkinOptions } from '@cucumber/gherkin'
+import type { IGherkinOptions } from '@cucumber/gherkin'
 import { MessageToNdjsonStream } from '@cucumber/message-streams'
 import { IdGenerator } from '@cucumber/messages'
 import { Command } from 'commander'
@@ -20,11 +20,7 @@ const options: IGherkinOptions = {
   includeSource: program.opts().source,
   includeGherkinDocument: program.opts().ast,
   includePickles: program.opts().pickles,
-  newId: program.opts().predictableIds
-    ? IdGenerator.incrementing()
-    : IdGenerator.uuid(),
+  newId: program.opts().predictableIds ? IdGenerator.incrementing() : IdGenerator.uuid(),
 }
 
-GherkinStreams.fromPaths(paths, options)
-  .pipe(new MessageToNdjsonStream())
-  .pipe(process.stdout)
+GherkinStreams.fromPaths(paths, options).pipe(new MessageToNdjsonStream()).pipe(process.stdout)
