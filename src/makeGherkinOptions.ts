@@ -1,4 +1,4 @@
-import { IGherkinOptions } from '@cucumber/gherkin'
+import type { IGherkinOptions } from '@cucumber/gherkin'
 import { IdGenerator } from '@cucumber/messages'
 
 const defaultOptions: IGherkinOptions = {
@@ -9,8 +9,6 @@ const defaultOptions: IGherkinOptions = {
   newId: IdGenerator.uuid(),
 }
 
-export default function gherkinOptions(
-  options: IGherkinOptions
-): IGherkinOptions {
+export default function gherkinOptions(options: IGherkinOptions): IGherkinOptions {
   return { ...defaultOptions, ...options }
 }
