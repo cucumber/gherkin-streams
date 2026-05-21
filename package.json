@@ -32,7 +32,7 @@
     "@cucumber/messages": "^32.0.0",
     "@types/mocha": "10.0.10",
     "@types/node": "22.19.19",
-    "mocha": "11.7.5",
+    "mocha": "11.7.6",
     "nyc": "18.0.0",
     "ts-node": "^10.7.0",
     "typescript": "5.9.3"
