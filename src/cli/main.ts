@@ -1,13 +1,16 @@
+import { createRequire } from 'node:module'
 import type { IGherkinOptions } from '@cucumber/gherkin'
 import { MessageToNdjsonStream } from '@cucumber/message-streams'
 import { IdGenerator } from '@cucumber/messages'
 import { Command } from 'commander'
 
-import packageJson from '../../package.json'
 import GherkinStreams from '../GherkinStreams'
 
+// read from package.json at runtime so it stays outside the compiled rootDir
+const { version } = createRequire(__filename)('../../package.json')
+
 const program = new Command()
-program.version(packageJson.version)
+program.version(version)
 program.option('--no-source', 'Do not output Source messages')
 program.option('--no-ast', 'Do not output GherkinDocument messages')
 program.option('--no-pickles', 'Do not output Pickle messages')
