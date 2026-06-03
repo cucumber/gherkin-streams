@@ -6,7 +6,6 @@ import { Command } from 'commander'
 
 import GherkinStreams from '../GherkinStreams'
 
-// read from package.json at runtime so it stays outside the compiled rootDir
 const { version } = createRequire(__filename)('../../package.json')
 
 const program = new Command()
