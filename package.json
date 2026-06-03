@@ -30,11 +30,12 @@
     "@cucumber/gherkin": "^39.0.0",
     "@cucumber/message-streams": "^4.0.1",
     "@cucumber/messages": "^32.0.0",
+    "@tsconfig/recommended": "^1.0.13",
     "@types/mocha": "10.0.10",
-    "@types/node": "22.19.19",
+    "@types/node": "^22.19.19",
     "mocha": "11.7.6",
     "nyc": "18.0.0",
-    "ts-node": "^10.7.0",
+    "ts-node": "^10.9.2",
     "typescript": "6.0.3"
   },
   "peerDependencies": {
