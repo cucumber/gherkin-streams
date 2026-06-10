@@ -17,7 +17,7 @@
   "scripts": {
     "test": "mocha",
     "build": "tsc -p tsconfig.build.json",
-    "postbuild": "node -e \"require('.')\"",
+    "postbuild": "node -e \"require('.')\" && node bin/gherkin --no-source --no-ast --no-pickles testdata/good/minimal.feature",
     "prepublishOnly": "npm run build",
     "fix": "biome check --fix --error-on-warnings",
     "lint": "biome check --error-on-warnings"
