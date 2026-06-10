@@ -15,7 +15,7 @@ You need to have `@cucumber/gherkin` and`@cucumber/message-streams` in your depe
 ## Usage
 
 ```javascript
-const { GherkinStreams } = require('@cucumber/gherkin-streams')
+import { GherkinStreams } from '@cucumber/gherkin-streams'
 
 const options = {
   includeSource: true,
@@ -33,7 +33,7 @@ stream.pipe(...)
 You can include `relativeTo` option to avoid emitting longer or absolute URIs, instead making them only relative to the current working directory (or whatever makes sense for your use case):
 
 ```javascript
-const { GherkinStreams } = require('@cucumber/gherkin-streams')
+import { GherkinStreams } from '@cucumber/gherkin-streams'
 
 // imagine `discoverPaths()` is a function that returns absolute paths
 const paths = discoverPaths();

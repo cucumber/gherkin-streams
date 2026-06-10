@@ -4,9 +4,9 @@ import { MessageToNdjsonStream } from '@cucumber/message-streams'
 import { IdGenerator } from '@cucumber/messages'
 import { Command } from 'commander'
 
-import GherkinStreams from '../GherkinStreams'
+import GherkinStreams from '../GherkinStreams.js'
 
-const { version } = createRequire(__filename)('../../package.json')
+const { version } = createRequire(import.meta.filename)('../../package.json')
 
 const program = new Command()
 program.version(version)

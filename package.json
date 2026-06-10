@@ -2,6 +2,7 @@
   "name": "@cucumber/gherkin-streams",
   "version": "6.0.0",
   "description": "Streams for reading Gherkin parser output",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
@@ -16,6 +17,7 @@
   "scripts": {
     "test": "mocha",
     "build": "tsc -p tsconfig.build.json",
+    "postbuild": "node -e \"require('.')\"",
     "prepublishOnly": "npm run build",
     "fix": "biome check --fix --error-on-warnings",
     "lint": "biome check --error-on-warnings"
