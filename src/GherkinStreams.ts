@@ -3,9 +3,9 @@ import { PassThrough, type Readable } from 'node:stream'
 import type { IGherkinOptions } from '@cucumber/gherkin'
 import type * as messages from '@cucumber/messages'
 
-import makeGherkinOptions from './makeGherkinOptions'
-import ParserMessageStream from './ParserMessageStream'
-import SourceMessageStream from './SourceMessageStream'
+import makeGherkinOptions from './makeGherkinOptions.js'
+import ParserMessageStream from './ParserMessageStream.js'
+import SourceMessageStream from './SourceMessageStream.js'
 
 export interface IGherkinStreamOptions extends IGherkinOptions {
   relativeTo?: string

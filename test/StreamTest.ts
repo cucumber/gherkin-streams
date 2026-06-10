@@ -3,7 +3,7 @@ import type { Readable } from 'node:stream'
 import { dialects, type IGherkinOptions, makeSourceEnvelope } from '@cucumber/gherkin'
 import type * as messages from '@cucumber/messages'
 
-import { GherkinStreams } from '../src'
+import { GherkinStreams } from '../src/index.js'
 
 const defaultOptions: IGherkinOptions = {}
 
