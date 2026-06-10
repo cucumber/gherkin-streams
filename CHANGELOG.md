@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [7.0.0] - 2026-06-10
 ### Changed
 - BREAKING CHANGE: Switch to ESM ([#144](https://github.com/cucumber/gherkin-streams/pull/144))
 
@@ -64,7 +66,8 @@ peer dependencies. You now have to add `@cucumber/gherkin` in your dependencies:
 
 ## [1.0.0] - 2021-03-24
 
-[Unreleased]: https://github.com/cucumber/gherkin-streams/compare/v6.0.0...HEAD
+[Unreleased]: https://github.com/cucumber/gherkin-streams/compare/v7.0.0...HEAD
+[7.0.0]: https://github.com/cucumber/gherkin-streams/compare/v6.0.0...v7.0.0
 [6.0.0]: https://github.com/cucumber/gherkin-streams/compare/v5.0.1...v6.0.0
 [5.0.1]: https://github.com/cucumber/gherkin-streams/compare/v5.0.0...v5.0.1
 [5.0.0]: https://github.com/cucumber/gherkin-streams/compare/v4.0.0...v5.0.0
