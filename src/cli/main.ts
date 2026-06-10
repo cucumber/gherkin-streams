@@ -10,6 +10,7 @@ const { version } = createRequire(import.meta.filename)('../../package.json')
 
 const program = new Command()
 program.version(version)
+program.argument('[paths...]', 'Feature files to parse')
 program.option('--no-source', 'Do not output Source messages')
 program.option('--no-ast', 'Do not output GherkinDocument messages')
 program.option('--no-pickles', 'Do not output Pickle messages')
