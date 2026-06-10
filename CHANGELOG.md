@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Changed
-- BREAKING CHANGE: switch to ESM ([#144](https://github.com/cucumber/gherkin-streams/pull/144))
+- BREAKING CHANGE: Switch to ESM ([#144](https://github.com/cucumber/gherkin-streams/pull/144))
 
 ## [6.0.0] - 2025-09-12
 ### Added
