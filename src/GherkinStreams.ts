@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import { PassThrough, type Readable } from 'node:stream'
 import type { IGherkinOptions } from '@cucumber/gherkin'
-import type * as messages from '@cucumber/messages'
+import type { Envelope } from '@cucumber/messages'
 
 import makeGherkinOptions from './makeGherkinOptions.js'
 import ParserMessageStream from './ParserMessageStream.js'
@@ -43,7 +43,7 @@ function fromPaths(paths: readonly string[], options: IGherkinStreamOptions): Re
   return combinedMessageStream
 }
 
-function fromSources(envelopes: readonly messages.Envelope[], options: IGherkinOptions): Readable {
+function fromSources(envelopes: readonly Envelope[], options: IGherkinOptions): Readable {
   const envelopesCopy = envelopes.slice()
   options = makeGherkinOptions(options)
   const combinedMessageStream = new PassThrough({
