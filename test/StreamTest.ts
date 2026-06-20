@@ -1,7 +1,7 @@
 import assert from 'node:assert'
 import type { Readable } from 'node:stream'
 import { dialects, type IGherkinOptions, makeSourceEnvelope } from '@cucumber/gherkin'
-import type * as messages from '@cucumber/messages'
+import type { Envelope } from '@cucumber/messages'
 
 import { GherkinStreams } from '../src/index.js'
 
@@ -70,10 +70,10 @@ describe('gherkin', () => {
   })
 })
 
-async function streamToArray(readableStream: Readable): Promise<messages.Envelope[]> {
-  return new Promise<messages.Envelope[]>(
-    (resolve: (wrappers: messages.Envelope[]) => void, reject: (err: Error) => void) => {
-      const items: messages.Envelope[] = []
+async function streamToArray(readableStream: Readable): Promise<Envelope[]> {
+  return new Promise<Envelope[]>(
+    (resolve: (wrappers: Envelope[]) => void, reject: (err: Error) => void) => {
+      const items: Envelope[] = []
       readableStream.on('data', items.push.bind(items))
       readableStream.on('error', (err: Error) => reject(err))
       readableStream.on('end', () => resolve(items))
