@@ -37,7 +37,7 @@
     "@types/node": "^22.19.19",
     "mocha": "11.8.0",
     "nyc": "18.0.0",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.23.5",
     "typescript": "7.0.2"
   },
   "peerDependencies": {
