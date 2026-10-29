@@ -8,31 +8,42 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ## [7.0.1] - 2026-06-20
+
 ### Fixed
+
 - Remove namespace imports from messages
 
 ## [7.0.0] - 2026-06-10
+
 ### Changed
+
 - BREAKING CHANGE: Switch to ESM ([#144](https://github.com/cucumber/gherkin-streams/pull/144))
 
 ## [6.0.0] - 2025-09-12
+
 ### Added
+
 - Add support for Node.js 24.x ([#111](https://github.com/cucumber/gherkin-streams/pull/111))
 
 ### Removed
+
 - Drop support for Node.js 18.x, 22.x ([#111](https://github.com/cucumber/gherkin-streams/pull/111))
 
 ## [5.0.1] - 2022-03-31
+
 ### Changed
+
 - Peer dependencies are now more permissive and simply request any version greater than:
   - @cucumber/gherkin: >=22.0.0
   - @cucumber/messages: >=17.1.1
   - @cucumber/message-streams: >=4.0.0
 
 ## [5.0.0] - 2022-03-07
+
 ### Changed
+
 - `@cucumber/gherkin`, `@cucumber/messages` and `@cucumber/message-streams` are now
-peer dependencies. You now have to add `@cucumber/gherkin` in your dependencies:
+  peer dependencies. You now have to add `@cucumber/gherkin` in your dependencies:
 ```diff
 {
 "dependencies": {
@@ -44,28 +55,39 @@ peer dependencies. You now have to add `@cucumber/gherkin` in your dependencies:
 ([PR#5](https://github.com/cucumber/gherkin-streams/pull/5))
 
 ## [4.0.0] - 2021-09-01
+
 ### Changed
+
 - Upgrade to `@cucumber/messages` `17.1.0`
 - Upgrade to `@cucumber/gherkin` `21.0.0`
 
 ## [3.0.0] - 2021-07-08
+
 ### Changed
+
 - Upgrade to `@cucumber/messages` `17.0.0`
 - Upgrade to `@cucumber/gherkin` `20.0.0`
 
 ## [2.0.2] - 2021-05-17
+
 ### Changed
+
 - Upgrade to `@cucumber/message-streams` `2.0.0`
 
 ## [2.0.1] - 2021-05-17
+
 ### Fixed
+
 - Use `^x.y.z` version for `@cucumber/*` dependencies, allowing minor and patch releases to be picked up.
 
 ## [2.0.0] - 2021-05-15
+
 ### Added
+
 - Add ability to specify a `relativeTo` path for cleaner emitted `uri`s [#1510](https://github.com/cucumber/cucumber/pull/1510)
 
 ### Changed
+
 - Upgrade to gherkin 19.0.0
 
 ## [1.0.0] - 2021-03-24
