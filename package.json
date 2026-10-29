@@ -34,7 +34,7 @@
     "@cucumber/messages": "^34.0.0",
     "@tsconfig/recommended": "^1.0.13",
     "@types/mocha": "10.0.10",
-    "@types/node": "^22.19.19",
+    "@types/node": "^26.0.0",
     "mocha": "12.0.3",
     "nyc": "18.0.0",
     "tsx": "^4.23.5",
