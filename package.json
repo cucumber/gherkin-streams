@@ -23,7 +23,7 @@
     "lint": "biome check --error-on-warnings"
   },
   "dependencies": {
-    "commander": "15.0.0",
+    "commander": "15.1.0",
     "source-map-support": "0.5.21"
   },
   "devDependencies": {
